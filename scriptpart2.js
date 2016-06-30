@@ -1,4 +1,3 @@
-
 // The Rock, Paper, Scissors Game
 /*
 var result = "";
@@ -18,13 +17,13 @@ if (userChoice == "rock" || userChoice == "paper" || userChoice == "scissors") {
 var pcChoice = Math.random();
 console.log(pcChoice);
 
-if (pcChoice < 0.333) {
-    pcChoice = "rock";
-} else if (pcChoice > 0.656) {
-    pcChoice = "paper";
-} else {
-    pcChoice = "scissors";
-}
+    if (pcChoice < 0.333) {
+        pcChoice = "rock";
+    } else if (pcChoice > 0.656) {
+        pcChoice = "paper";
+    } else {
+        pcChoice = "scissors";
+    }
 
 alert("Computer: " + pcChoice);
 
@@ -58,30 +57,31 @@ else {
 
 //The Basic Calculator 
 /*
-var num1 = prompt("Enter a number");
-var num2 = prompt("Enter a second number");
+var firstNumber = prompt("Enter a number");
+var secondNumber = prompt("Enter a second number");
 var operator = prompt("Would you like to do: +, -, * or /");
-if (operator !== '+' && operator !== '-' && operator !== '*' && operator !== '/') {
+    if (operator !== '+' && operator !== '-' && operator !== '*' && operator !== '/') {
 		alert('Invalid entry.');
 		}  
 
-var calculate = function(num1, num2, operator) {
-	var a = Number(num1);
-	var b = Number(num2);
+var calculate = function(firstNumber, secondNumber, operator) {
+	var a = Number(firstNumber);
+	var b = Number(secondNumber);
 	
-	var result;
+    var result;
     
-	switch (operator) {
-		case "+" :
+// *** switch (expression) ***  
+switch (operator) {
+    case "+" :
 		result = (a + b);
 		break;
-		case "-" :
+    case "-" :
 		result = (a - b);
 		break;
-		case "*" :
+    case "*" :
 		result = (a * b);
 		break;
-		case "/" :
+    case "/" :
 		result = (a / b);
 		break;
 		default :
@@ -89,7 +89,7 @@ var calculate = function(num1, num2, operator) {
 	}
 	alert("The answer is: " + result);
 }
-calculate(num1,num2,operator);
+calculate(firstNumber, secondNumber, operator);
 */
 
 // Death by JavaScript 
@@ -123,7 +123,7 @@ console.log(capitalize('the quick brown fox'));
 /*
 var str = "The quick brown fox";
 var matches = str.match(/[aeiou]/gi);
-//compare statement
+// *** compare statement ***
 var count = matches ? matches.length : 0;
     console.log(count + " vowels");
 */
