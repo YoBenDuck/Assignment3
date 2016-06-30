@@ -2,17 +2,17 @@
 /*
     var result = "";
 
-    // prompt user choice
+// prompt user choice
 
     var userChoice = prompt("Do you choose rock, paper or scissors?");
 
-    //enter something other than 'rock', 'paper' or 'scissors'
+//enter something other than 'rock', 'paper' or 'scissors'
 
     userChoice = userChoice.toLowerCase();
 
     if (userChoice == "rock" || userChoice == "paper" || userChoice == "scissors") {
 
-    // pc choice
+// pc choice
 
     var pcChoice = Math.random();
     console.log(pcChoice);
